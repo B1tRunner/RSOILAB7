@@ -1,0 +1,15 @@
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\Shipments_of_building_materials..csproj.AssemblyReference.cache
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\Shipments_of_building_materials_.Properties.Resources.resources
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\Shipments_of_building_materials..csproj.GenerateResource.cache
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\Shipments_of_building_materials..csproj.CoreCompileInputs.cache
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\bin\Debug\Shipments_of_building_materials_.exe.config
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\bin\Debug\Shipments_of_building_materials_.exe
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\bin\Debug\Shipments_of_building_materials_.pdb
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\bin\Debug\EntityFramework.dll
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\bin\Debug\EntityFramework.SqlServer.dll
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\bin\Debug\EntityFramework.xml
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\bin\Debug\EntityFramework.SqlServer.xml
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\Shipments_of_building_materials..csproj.CopyComplete
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\Shipments_of_building_materials_.exe
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\Shipments_of_building_materials_.pdb
+D:\Прога\BGUIR_Labs\bguirlabs_vadyutin\Laba_7\Shipments_of_building_materials\obj\Debug\MaterialShipmentApp.MaterialShipmentForm.resources

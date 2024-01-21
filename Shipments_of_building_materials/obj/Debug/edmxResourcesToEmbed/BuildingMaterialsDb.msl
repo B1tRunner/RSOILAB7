@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BuildingMaterialsDbModelStoreContainer" CdmEntityContainer="BuildingMaterialsDbEntities">
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="BuildingMaterialsDbModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shipment">
+      <EntityTypeMapping TypeName="BuildingMaterialsDbModel.Shipment">
+        <MappingFragment StoreEntitySet="Shipment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DealTime" ColumnName="DealTime" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="NumOfMaterials" ColumnName="NumOfMaterials" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

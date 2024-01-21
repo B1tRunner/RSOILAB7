@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BuildingMaterialsDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num" Type="Int32" />
+    <Property Name="Cost" Type="Double" />
+    <NavigationProperty Name="Shipment" Relationship="Self.FK_Shipments_Materials" FromRole="Material" ToRole="Shipment" />
+  </EntityType>
+  <EntityType Name="Shipment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DealTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MaterialId" Type="Int32" Nullable="false" />
+    <Property Name="NumOfMaterials" Type="Int32" Nullable="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TotalCost" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Material" Relationship="Self.FK_Shipments_Materials" FromRole="Shipment" ToRole="Material" />
+  </EntityType>
+  <Association Name="FK_Shipments_Materials">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="Shipment" Type="Self.Shipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Shipment">
+        <PropertyRef Name="MaterialId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BuildingMaterialsDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Material" EntityType="Self.Material" />
+    <EntitySet Name="Shipment" EntityType="Self.Shipment" />
+    <AssociationSet Name="FK_Shipments_Materials" Association="Self.FK_Shipments_Materials">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="Shipment" EntitySet="Shipment" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
